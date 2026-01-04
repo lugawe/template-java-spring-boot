@@ -5,9 +5,10 @@ FROM maven:3-eclipse-temurin-25-alpine AS build
 WORKDIR /app
 
 COPY pom.xml .
-COPY src ./src
+RUN mvn -B dependency:go-offline
 
-RUN mvn clean package -DskipTests
+COPY src ./src
+RUN mvn -B clean package -DskipTests
 
 # RUNTIME
 

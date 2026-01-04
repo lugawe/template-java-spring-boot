@@ -1,9 +1,9 @@
 ---
-name: "CI - Maven"
+name: "CI - Maven Build"
 "on":
 - "push"
 jobs:
-  build:
+  maven-build:
     runs-on: "ubuntu-latest"
     steps:
     - uses: "actions/checkout@v6"
@@ -13,4 +13,4 @@ jobs:
         java-version: "25"
         distribution: "temurin"
     - name: "Run maven clean package"
-      run: "./mvnw --batch-mode clean package"
+      run: "./mvnw -B clean package"

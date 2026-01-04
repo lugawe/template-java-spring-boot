@@ -12,5 +12,6 @@ jobs:
       with:
         java-version: "25"
         distribution: "temurin"
+        cache: "maven"
     - name: "Run maven clean package"
       run: "./mvnw -B clean package"

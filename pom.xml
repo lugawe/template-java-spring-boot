@@ -18,7 +18,7 @@
         <!-- dependencies -->
         <spring-boot.version>4.0.1</spring-boot.version>
         <!-- code style -->
-        <spotless-maven-plugin.version>3.1.0</spotless-maven-plugin.version>
+        <spotless-maven-plugin.version>3.2.1</spotless-maven-plugin.version>
         <!-- maven plugins -->
         <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
